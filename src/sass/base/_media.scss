@@ -3,6 +3,21 @@
         max-width: 800px;
         margin: 0 auto;
     }
+    .catalog{
+        &__content{
+            margin-top: 60px;
+            display:  none;
+            justify-content: center;
+            flex-wrap: wrap;
+            &_active{
+                display: flex;
+            }
+        }
+        &-item{
+            margin: 0 10px;
+            margin-bottom: 20px;
+        }
+    }
 }
 @media(max-width:992px){
     .carusel{
@@ -55,11 +70,28 @@
             text-align: center;
         }
     }
+    .catalog{
+        &__tabs{
+            // flex-direction: column;
+            flex-wrap: wrap;
+        }
+        &__tab{
+            margin-bottom: 10px;
+        }
+    }
 }
 @media(max-width:480px){
+    .catalog{
+        &-item{
+            margin: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
     .header{
         &__phone{
             font-size: 14px;  
+            margin-bottom: 4px;
         }
         &__logo{
             width: 150px;

@@ -25,4 +25,10 @@
         height: 55px;
         font-size: 16px;
     }
+    &_mini{
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+        border: 1px solid $main-color;
+    }
 }
