@@ -1,0 +1,35 @@
+.reviews{
+    &__comments{
+        margin: 70px 0;
+        
+    }   
+    &__comment{
+        display: flex;
+       
+        
+    }
+    
+    &__image img{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin-right: 60px;
+        
+    }
+    &__name{
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    &__marathons{
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 19px;
+    }
+    hr{
+        margin: 50px 0 50px 0;
+        border-bottom: 0;
+    }
+}
