@@ -42,6 +42,7 @@ $(document).ready(function(){
         $(".overlay").addClass("overlay_active"); 
         let thisClass = $(this).attr('data-modal');
         $(`#${thisClass}`).addClass('modal_active');
+        $("body").addClass("scroll-hidden");
 
       
         } 
@@ -49,6 +50,7 @@ $(document).ready(function(){
         $('.modal__close').on("click", function(){
           $(".overlay").removeClass("overlay_active");
           $(`.modal`).removeClass('modal_active');
+          $("body").removeClass("scroll-hidden");
         });
 
         $("[data-modal=order]").each(function(i){
@@ -58,6 +60,43 @@ $(document).ready(function(){
           })
         });
 
+        function validateForms(form){
+          $(form).validate({
+            errorClass: "form-error", 
+            rules:{
+              
+              name: {
+  
+                required: true,
+                minlength: 2
+              },
+              phone: "required",
+              email:{
+                required: true,
+                email:true
+  
+  
+              } 
+            },
+            messages:{ 
+            name:{
+                         
+              required:"Пожалуйста, введите свое имя",
+              minlength: jQuery.validator.format("Введите не менее {0} символов")
+              },
+              
+              email: {
+                required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
+                email: "Ваш адрес электронной почты должен быть в формате test@test.com"
+              },  
+              phone: "Пожалуйста, введите свой телефон"
+            }
+          });
+        };
+        validateForms('#consultation-form');
+        validateForms('#consultation form');
+        validateForms('#order form');
+        // ,'#consultation form', '#order form'
   });
 
 

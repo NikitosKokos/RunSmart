@@ -12,6 +12,9 @@
         visibility: visible;
     }
 }
+.scroll-hidden{
+    overflow: hidden;
+}
 .modal{
     opacity: 0;
     visibility: hidden;
@@ -56,6 +59,18 @@
     }
     &_mini{
         min-height: 140px;
+    }
+    .form-error{
+        border-color: $main-color;
+        transition: all .3s ease-in;
+    }
+    label.form-error{
+        border: none;
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+        margin-bottom: 15px; 
     }
 }
 

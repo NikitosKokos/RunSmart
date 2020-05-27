@@ -8,4 +8,16 @@
         font-weight: 500;
         margin-top: 80px;
     }
+    .form-error{
+        border-color: $main-color;
+        transition: all .3s ease-in;
+    }
+    label.form-error{
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+        margin-bottom: 15px; 
+    }
 }
