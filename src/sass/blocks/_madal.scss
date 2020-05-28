@@ -64,7 +64,11 @@
         border-color: $main-color;
         transition: all .3s ease-in;
     }
+    label{
+        display: none;
+    }
     label.form-error{
+        display: block;
         border: none;
         color: $main-color;
         font-size: 14px;

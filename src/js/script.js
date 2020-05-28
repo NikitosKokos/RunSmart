@@ -51,6 +51,9 @@ $(document).ready(function(){
           $(".overlay").removeClass("overlay_active");
           $(`.modal`).removeClass('modal_active');
           $("body").removeClass("scroll-hidden");
+          $('.modal .form-error').removeClass("form-error");
+          $(".modal input").val('');
+          // $('.modal label.form-error').css('display', 'none');
         });
 
         $("[data-modal=order]").each(function(i){
@@ -97,6 +100,8 @@ $(document).ready(function(){
         validateForms('#consultation form');
         validateForms('#order form');
         // ,'#consultation form', '#order form'
+
+        $('input[name=phone]').mask("+38(999) 999-99-99");
   });
 
 
