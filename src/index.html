@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RunSmart</title>
-      <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
-      <link rel="stylesheet" href="./css/fonts.css">
-      <link rel="stylesheet" href="./css/slick.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
     <link rel="stylesheet" href="./css/style.min.css">
   
 
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
         <hrader class="header">
             <a href="#" class="header__logo">
@@ -61,19 +62,19 @@
         <div class="container">
             <div class="title"><h3>НАШИ ПРЕИМУЩЕСТВА</h3></div>
             <div class="advantages__row">
-                <div class="advantages__section">
+                <div class="advantages__section fadeInLeft wow" data-wow-duration="1s" data-wow-offset="50" data-wow-delay="1s">
                     <img src="./img/icons/advantages/cup.png" alt="cup">
                     <h5 class="advantages__header">Делимся опытом</h5>
                     <p class="advantages__text">Наши сотрудники всегда готовы поделиться своим опытом, 
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
                 </div>
-                <div class="advantages__section">
-                    <img src="./img/icons/advantages/heart.png" alt="heart">
+                <div class="advantages__section fadeInUp wow" data-wow-duration="1s" data-wow-offset="50" data-wow-delay="1s">
+                    <img src="./img/icons/advantages/heart.png" alt="heart" class="heart_animate">
                     <h5 class="advantages__header">Заботимся о здоровье</h5>
                     <p class="advantages__text">Мы работаем для того, 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
                 </div>
-                <div class="advantages__section">
+                <div class="advantages__section fadeInRight wow" data-wow-duration="1s" data-wow-offset="50" data-wow-delay="1s">
                     <img src="./img/icons/advantages/shoe.png" alt="shoe    ">
                     <h5 class="advantages__header">Учим бегать</h5>
                     <p class="advantages__text">Помогаем с обучением 
@@ -101,7 +102,7 @@
         </div>
     </section>
 
-    <section class="carusel">
+    <div class="carusel">
         <div class="container">
         <div class="carusel__inner">
             <div><img src="./img/slide/slede-01.png" alt="slide"></div>
@@ -110,7 +111,7 @@
           </div>            
         </div>
 
-    </section>
+    </div>
     <section class="catalog">
         <div class="container">
             <div class="title"><h3>Каталог пульсометров</h3></div>
@@ -121,35 +122,8 @@
             </ul>
             <div class="catalog__content catalog__content_active">
                 
-                <!-- <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                        <img src="./img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
-                    <div class="catalog-item__subtitle">Пульсометр Polar FT1
-                    </div>
-                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                    <a href="#" class="catalog__item__link">ПОДРОБНЕЕ</a>
-                    <hr>
-                   <div class="catalog-item__footer">
-                       <div class="catalog-item__prices">
-                        <div class="catalog-item__old-price">4 750 руб.</div>
-                        <div class="catalog-item__price">4 500 руб.</div>
-                       </div>
-                       <button class="button button_mini">КУПИТЬ</button>
-                   </div>       
-                        </div>
-                        <ul class="catalog-item__list ">
-                           <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                            </li>
-                           <li>
-                            Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                           <li>   Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                           <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                        <ul>
-                    </div>
-                  
-                </div> -->
-                <div class="catalog-item">
+              
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -182,7 +156,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -214,7 +188,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -246,7 +220,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -279,7 +253,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -311,7 +285,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -347,7 +321,7 @@
             </div>
             
             <div class="catalog__content">
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -379,7 +353,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -411,7 +385,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -443,7 +417,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -477,7 +451,7 @@
                 </div>               
             </div>
             <div class="catalog__content">
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -510,7 +484,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -542,7 +516,7 @@
                         <button class="button button_mini" data-modal="order">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInLeft wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/catalog_img.png" alt="pulsometr" class="catalog-item__img">
@@ -576,13 +550,13 @@
                 </div>               
             </div>
             </div>
-        </div>
+       
     </section>
     <section class="reviews">
         <div class="container">
             <div class="title"><h3>отзывы клиентов</h3></div> 
             <div class="reviews__comments">
-                <div class="reviews__comment">
+                <div class="reviews__comment fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
                     <div class="reviews__image">
                         <img src="./img/coment_01.png" alt="photo">
                     </div>
@@ -599,7 +573,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="reviews__comment">  <div class="reviews__image">
+                <div class="reviews__comment fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">  <div class="reviews__image">
                     <img src="./img/coment_02.png" alt="photo">
                 </div>
                 <div class="reviews__text">
@@ -613,7 +587,7 @@
                         С ними подготовился к своему первому полумарафону! Спасибо!!! </div>
                 </div></div>
                 <hr>
-                <div class="reviews__comment">  <div class="reviews__image">
+                <div class="reviews__comment fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">  <div class="reviews__image">
                     <img src="./img/coment_03.png" alt="photo">
                 </div>
                 <div class="reviews__text">
@@ -646,7 +620,7 @@
             <a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
             <div class="footer__social">
                 <a href="#" class="footer__social-item"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fff" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
-                <a href="#" class="footer__social-item"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                <a href="#" class="footer__social-item">
                     <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                         <g>
                             <path d="M226.467714,256 L29.5322856,256 C13.2237152,256 0,242.771645 0,226.451622 L0,29.5325465 C0,13.2215704 13.2237152,0 29.5322856,0 L226.467714,0 C242.778546,0 256,13.2215704 256,29.5325465 L256,226.451622 C256,242.771645 242.778546,256 226.467714,256 L226.467714,256 Z M127.998869,78.7662732 C100.807364,78.7662732 78.767839,100.803732 78.767839,127.995477 C78.767839,155.182698 100.807364,177.231465 127.998869,177.231465 C155.190374,177.231465 177.234423,155.182698 177.234423,127.995477 C177.234423,100.803732 155.190374,78.7662732 127.998869,78.7662732 L127.998869,78.7662732 Z M226.467714,39.3774825 C226.467714,33.9427521 222.057548,29.5325465 216.611557,29.5325465 L187.079272,29.5325465 C181.640066,29.5325465 177.234423,33.9427521 177.234423,39.3774825 L177.234423,68.9213372 C177.234423,74.3560676 181.640066,78.7662732 187.079272,78.7662732 L216.611557,78.7662732 C222.057548,78.7662732 226.467714,74.3560676 226.467714,68.9213372 L226.467714,39.3774825 Z M226.467714,108.296558 L204.181672,108.296558 C205.805518,114.59976 206.764447,121.185667 206.764447,127.995477 C206.764447,171.504983 171.501206,206.766273 127.998869,206.766273 C84.4987941,206.766273 49.2332918,171.504983 49.2332918,127.995477 C49.2332918,121.185667 50.1967436,114.59976 51.8205896,108.296558 L29.5322856,108.296558 L29.5322856,216.613471 C29.5322856,222.043678 33.9424523,226.451622 39.3884427,226.451622 L216.611557,226.451622 C222.057548,226.451622 226.467714,222.043678 226.467714,216.613471 L226.467714,108.296558 Z" fill="#fff"></path>
@@ -656,7 +630,7 @@
             </div>
         </div>
     </footer>
-
+    <a href="#up" class="pageup"><img src="./img/icons/up.svg" alt="up"></a>
     <div class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
@@ -689,11 +663,12 @@
         </div>
     </div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="./js/slick.min.js"></script>
+<script  src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script  src="./js/slick.min.js"></script>
 <script src="./js/jquery.validate.min.js"></script>
 <script src="./js/jquery.maskedinput.min.js"></script>
+<script src="./js/wow.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>

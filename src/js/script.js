@@ -102,6 +102,31 @@ $(document).ready(function(){
         // ,'#consultation form', '#order form'
 
         $('input[name=phone]').mask("+38(999) 999-99-99");
+
+
+        // pageup
+
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 100 ){
+            $('.pageup').addClass("pageup_active");
+          }else{
+            $('.pageup').removeClass("pageup_active");
+          }
+        });
+
+        $("a[href^='#up']").click(function(){
+          const _href = $(this).attr("href");
+          $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+          return false;
+  });
+
+    new WOW().init();
+
+    $('.hover').on('touchstart touchend', function(e) {
+      e.preventDefault();
+      $(this).toggleClass('hover_effect');
+  });
+
   });
 
 
